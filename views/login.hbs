@@ -1,0 +1,27 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <!-- views/login.hbs -->
+
+    <form action='/login' method='POST'>
+      <label for='email'>Email</label>
+      {{!  key of email }}
+      {{! type of email is text but also helps alert if we mistyped something on email }}
+      <input id='email' type='email' name='email' />
+
+      <label for='password'>Password</label>
+      {{!  key of password }}
+      {{! helps hide the password as little circles if type is password }}
+      <input id='password' type='password' name='password' />
+
+      <button type='submit'>Login</button>
+    </form>
+
+  </body>
+</html>
